@@ -9,7 +9,7 @@ import {ColDef, GridOptions} from 'ag-grid';
 export class AppComponent {
   title = 'try';
   zoom = 4;
-  wayPoints = [{location: 'Chicago, IL'}];
+  wayPoints = [{location: {lat: 41.946841, lng: -87.702567}}];
   orig = {lat: 42.022794, lng: -87.809814};
   dest = {lat: 26.150488, lng: -80.224006};
   rowData = [
