@@ -33,6 +33,9 @@ export class AppComponent {
     this.gridOptions = {
       onGridReady: () => {
         this.gridOptions.api.setRowData(this.rowData);
+      },
+      onGridSizeChanged: () => {
+        this.gridOptions.api.sizeColumnsToFit();
       }
     };
     this.gridOptions.columnDefs = this.columnDefs;

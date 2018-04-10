@@ -2,16 +2,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AgGridModule } from 'ag-grid-angular';
+import 'ag-grid-enterprise';
 import { AgmCoreModule } from '@agm/core';
 
 
 import { AppComponent } from './app.component';
 import { AgmDirectionModule } from 'agm-direction';
+import { SecondGridComponent } from './second-grid/second-grid.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SecondGridComponent
   ],
   imports: [
     BrowserModule,

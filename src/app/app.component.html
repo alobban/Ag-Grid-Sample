@@ -5,11 +5,15 @@
   </h1>
 </div>
 <hr>
+<try-second-grid></try-second-grid>
+<hr>
+
 <ag-grid-angular
    class="data-grid ag-theme-material"
    [gridOptions]="gridOptions"
 >
 </ag-grid-angular>
+
 
 <agm-map [mapTypeControl]="true" [zoom]="zoom" [latitude]="41.8744" [longitude]="-87.6514" style="height: 600px; width: 1000px;">
   <agm-direction [origin]="orig" [destination]="dest" [waypoints]="wayPoints" [travelMode]="'DRIVING'"></agm-direction>
@@ -18,4 +22,5 @@
     <!--<agm-polyline-point *ngFor="let stop of rowData" [latitude]="stop.stop_latitude" [longitude]="stop.stop_longitude"></agm-polyline-point>-->
   <!--</agm-polyline>-->
 </agm-map>
+
 
