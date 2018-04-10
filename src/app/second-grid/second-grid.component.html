@@ -1,0 +1,22 @@
+<section *ngIf="opHours" class="grid-styling">
+  <div>Hours of Operation</div>
+  <ag-grid-angular
+    #agGrid
+    class="ag-theme-material"
+    [rowData]="opHours"
+    [columnDefs]="displayedColumns"
+  >
+  </ag-grid-angular>
+  <!--<div fxLayout="column">
+    <div fxLayout="row" class="table-header" fxLayoutGap="20px">
+      <div>Day</div>
+      <div>Open</div>
+      <div>Close</div>
+    </div>
+    <div fxLayout="row" *ngFor="let opHour of opHours" class="table-comment-content" fxLayoutGap="20px">
+      <div class="type-field">{{ opHour.day }}</div>
+      <div>{{ opHour.open }}</div>
+      <div>{{ opHour.close }}</div>
+    </div>
+  </div>-->
+</section>
